@@ -1,0 +1,4 @@
+webservice:
+  webServiceUrl: http://218.108.93.154/UserHeadService.asmx?wsdl
+  #webServiceUrl: http://218.108.93.154:8090/UserHeadService.asmx?wsdl
+  userinfoByIDMethod: GetUserinfoByID
