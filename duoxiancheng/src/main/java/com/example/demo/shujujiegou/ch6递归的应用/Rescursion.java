@@ -45,4 +45,13 @@ public class Rescursion {
             return f + f1;
         }
     }
+
+    private static void test(int i) {
+        System.out.println(i);
+        if (i == 0){
+            return;
+        }
+        test(i-1);
+        System.out.println("==="+i);
+    }
 }
