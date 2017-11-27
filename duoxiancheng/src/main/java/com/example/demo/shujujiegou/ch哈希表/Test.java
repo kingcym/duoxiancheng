@@ -11,18 +11,12 @@ import java.util.HashMap;
  * @Date: 2017/11/25 15:17
  */
 public class Test {
-    private final char value[];
-    public Test(Test original) {
-        this.value = original.value;
-    }
-
     public static void main(String[] args) {
-        String a="张三";
-        char[] chars = a.toCharArray();
-        int h = 0;
-        for (int i = 0; i < chars.length; i++) {
-            h = 31 * h + chars[i];
-        }
-        System.out.println(h);
+        KaifangdizhiHashTable ht = new KaifangdizhiHashTable();
+        ht.insert(new Info("a","张三"));
+        ht.insert(new Info("ct","李四"));
+
+        System.out.println(ht.find("a").getName());
+        System.out.println(ht.find("ct").getName());
     }
 }
