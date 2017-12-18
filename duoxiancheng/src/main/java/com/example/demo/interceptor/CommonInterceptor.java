@@ -37,7 +37,6 @@ public class CommonInterceptor implements HandlerInterceptor {
 						   HttpServletResponse response, Object handler,
 						   ModelAndView modelAndView) throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("======================controller之后执行=====================================");
 	}
 	/**
 	 * 执行完控制器后
@@ -47,7 +46,6 @@ public class CommonInterceptor implements HandlerInterceptor {
 								HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("======================执行完控制器后=====================================");
 
 	}
 

@@ -2,14 +2,14 @@ package com.example.responseBodyAdvice;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import lombok.Data;
+//import lombok.Data;
 
 /**
  * API返回信息
  * @author xiaoyin
  *
  */
-@Data
+//@Data
 @JsonInclude(Include.NON_NULL)
 public class ApiResponse<T> {
 	private T body;

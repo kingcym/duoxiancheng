@@ -15,7 +15,6 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		CommonInterceptor common = new CommonInterceptor();
-		System.out.println("=====================注册拦截器=======================================");
 		registry.addInterceptor(common);
 	}
 
