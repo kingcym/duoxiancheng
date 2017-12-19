@@ -11,6 +11,7 @@ public class BasicOneApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
