@@ -3,6 +3,7 @@ package com.example.demo.three.shujujiegou.queue;
 import org.junit.Before;
 
 import java.util.Comparator;
+import java.util.concurrent.DelayQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.PriorityBlockingQueue;
 
@@ -24,7 +25,6 @@ public class LinkedBlockingQueueExample {
     public void Before() {
         queue = new LinkedBlockingQueue();
     }
-
 
 
 
