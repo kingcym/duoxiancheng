@@ -32,7 +32,6 @@ public class DelayQueueExample {
         System.out.println(queue.take().getE());
     }
 
-
     @Test
     public void ssss() throws InterruptedException {
         queue.add(DelayElement.of("hello",TimeUnit.SECONDS,1));

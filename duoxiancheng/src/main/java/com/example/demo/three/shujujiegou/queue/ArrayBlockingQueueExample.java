@@ -183,7 +183,7 @@ public class ArrayBlockingQueueExample {
         queue.offer("1");
         queue.offer("2");
 
-        System.out.println(queue.take() + "--" + queue.size());
+        System.out.println(queue.element() + "--" + queue.size());
         System.out.println(queue.take() + "--" + queue.size());
         System.out.println(queue.take() + "--" + queue.size());
 

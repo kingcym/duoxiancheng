@@ -45,12 +45,14 @@ public class SynchronousQueueExample {
     public void putAndpoll() throws InterruptedException {
         Executors.newCachedThreadPool().execute(() -> {
             try {
-                TimeUnit.SECONDS.sleep(2);
+                System.out.println(queue.poll());
                 System.out.println(queue.poll());
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
-        queue.put(11);
+        TimeUnit.MICROSECONDS.sleep(2);
+        boolean offer = queue.offer(11);
+        System.out.println(offer);
     }
 }

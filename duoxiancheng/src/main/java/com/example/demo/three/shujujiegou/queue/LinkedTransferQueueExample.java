@@ -1,5 +1,6 @@
 package com.example.demo.three.shujujiegou.queue;
 
+import com.sun.scenario.effect.impl.prism.ps.PPStoPSWDisplacementMapPeer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,7 +43,7 @@ public class LinkedTransferQueueExample {
      *  还有个重载：tryTransfer(E e, long timeout, TimeUnit unit)
      */
     @Test
-    public void poll() throws InterruptedException {
+    public void transfer() throws InterruptedException {
         ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
         executorService.schedule(new Runnable() {
             @Override
@@ -85,6 +86,10 @@ public class LinkedTransferQueueExample {
         System.out.println("--=====--" + queue.size());
         TimeUnit.SECONDS.sleep(3);
         System.out.println("--=====--" + queue.size());
+    }
+
+    public static void main(String[] args) {
+
     }
 
 
