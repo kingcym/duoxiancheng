@@ -1,5 +1,6 @@
 package com.example.demo.three.shujujiegou.corrent;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -12,7 +13,14 @@ public class JdkMappermance {
 
     public static void main(String[] args) throws InterruptedException {
         // five();
-        one();
+        //one();
+        Date d = new Date(1514735999000L);
+       // 1514173529412
+       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
+       System.out.println(sdf.format(d));
+       System.out.println(System.currentTimeMillis());
+
+
     }
 
     private static void one() throws InterruptedException {

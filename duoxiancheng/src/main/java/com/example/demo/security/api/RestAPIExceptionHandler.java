@@ -8,7 +8,7 @@ import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
-//@ControllerAdvice(basePackages = "com.example.demo")
+@ControllerAdvice(basePackages = "com.example.demo")
 public class RestAPIExceptionHandler implements ResponseBodyAdvice<Object> {
 
 	@Override

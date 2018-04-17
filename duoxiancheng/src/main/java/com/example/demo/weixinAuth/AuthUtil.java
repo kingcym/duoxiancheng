@@ -17,11 +17,19 @@ import java.io.IOException;
  * @Date: 2017/12/16 15:27
  */
 public class AuthUtil {
+    public final static String appID = "wx39c064f7fdf78b61";
+
+    /**
+     *  公众号密码
+     */
+    public final static String appSecret = "b2754ef4e73e48de85edf5b431a322e7";
+
+
     //应用id
-    public static final String appID = "wx90be2514ffca6a63";
+    //public static final String appID = "wx90be2514ffca6a63";
     public static final String pcID = "wxbdc5610cc59c1631";
     //应用密钥
-    public static final String appSecret = "1c87fa7007226f98f52892cd27ab37b8";
+      // public static final String appSecret = "1c87fa7007226f98f52892cd27ab37b8";
    // public static final String appSecret = "88ca52017cb23d2199939ab49d1cc8a5";
 
     public static JSONObject doGetJson(String url) {

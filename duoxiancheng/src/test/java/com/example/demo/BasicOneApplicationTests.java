@@ -11,7 +11,7 @@ public class BasicOneApplicationTests {
 
 	@Test
 	public void contextLoads() {
-
+		System.out.println();
 	}
 
 }

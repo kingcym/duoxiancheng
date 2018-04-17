@@ -22,7 +22,8 @@ public class LoginControler {
     @GetMapping("/applogin")
     public void applogin(HttpServletResponse response) throws IOException {
         //回调地址
-        String backUrl = "http://19278m1w03.imwork.net/weixin/appCallBack";
+       // String backUrl = "http://19278m1w03.imwork.net/weixin/appCallBack";
+        String backUrl = "http://app.mamaezhan.com";
         /**
          * 参考官网：
          * https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842
@@ -40,7 +41,7 @@ public class LoginControler {
     @GetMapping("/pclogin")
     public void pclogin(HttpServletResponse response) throws IOException {
         //回调地址
-        String backUrl = "http://19278m1w03.imwork.net/weixin/appCallBack";
+        String backUrl = "http://m.qinziezhan.com/weixin/appCallBack";
         /**
          * 参考官网：
          * https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=&lang=zh_CN
